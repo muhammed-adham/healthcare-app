@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Color Theme Swatches in Hex */
+.Oscar-Health---Mobile-App-&-UX-UI-Design-1-hex { color: #1D64F2; }
+.Oscar-Health---Mobile-App-&-UX-UI-Design-2-hex { color: #0B438C; }
+.Oscar-Health---Mobile-App-&-UX-UI-Design-3-hex { color: #1B78F2; }
+.Oscar-Health---Mobile-App-&-UX-UI-Design-4-hex { color: #BFF205; }
+.Oscar-Health---Mobile-App-&-UX-UI-Design-5-hex { color: #F2F2F2; }
+

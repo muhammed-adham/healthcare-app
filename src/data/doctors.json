@@ -1,0 +1,490 @@
+{
+  "doctors": [
+    {
+      "id": 1,
+      "name": "Dr. Sarah Johnson",
+      "specialty": "Cardiology",
+      "rating": 4.8,
+      "reviews": 124,
+      "experience": "15 years",
+      "location": "Downtown Medical Center, 123 Main St",
+      "postgraduate": "MD, PhD in Cardiovascular Medicine, Harvard Medical School",
+      "image": "https://res.cloudinary.com/dph1b3jla/image/upload/v1745309966/divine-effiong-NJw-uqRN-IA-unsplash_imvrcf.jpg",
+      "availability": {
+        "monday": ["09:00", "10:00", "11:00", "14:00", "15:00"],
+        "wednesday": ["09:00", "10:00", "11:00", "14:00", "15:00"],
+        "friday": ["09:00", "10:00", "11:00", "14:00", "15:00"]
+      }
+    },
+    {
+      "id": 2,
+      "name": "Dr. Michael Chen",
+      "specialty": "Neurology",
+      "rating": 4.9,
+      "reviews": 98,
+      "experience": "12 years",
+      "location": "Northside Hospital, 456 Oak Ave",
+      "postgraduate": "MD, PhD in Neuroscience, Johns Hopkins University",
+      "image": "https://res.cloudinary.com/dph1b3jla/image/upload/v1745134319/doctor-with-his-arms-crossed-white-background_aat9q1.jpg",
+      "availability": {
+        "tuesday": ["10:00", "11:00", "13:00", "14:00", "15:00"],
+        "thursday": ["10:00", "11:00", "13:00", "14:00", "15:00"],
+        "saturday": ["09:00", "10:00", "11:00"]
+      }
+    },
+    {
+      "id": 3,
+      "name": "Dr. Emily Rodriguez",
+      "specialty": "Pediatrics",
+      "rating": 4.7,
+      "reviews": 156,
+      "experience": "8 years",
+      "location": "Children's Medical Center, 789 Pine St",
+      "postgraduate": "MD, MPH in Child Health, Stanford University",
+      "image": "https://res.cloudinary.com/dph1b3jla/image/upload/v1745131621/jonathan-borba-uBb_ZDIrquc-unsplash_mnrwpj.jpg",
+      "availability": {
+        "monday": ["08:00", "09:00", "10:00", "13:00", "14:00"],
+        "wednesday": ["08:00", "09:00", "10:00", "13:00", "14:00"],
+        "friday": ["08:00", "09:00", "10:00", "13:00", "14:00"]
+      }
+    },
+    {
+      "id": 4,
+      "name": "Dr. James Wilson",
+      "specialty": "Orthopedics",
+      "rating": 4.6,
+      "reviews": 87,
+      "experience": "18 years",
+      "location": "Sports Medicine Center, 321 Elm St",
+      "postgraduate": "MD, MS in Orthopedic Surgery, Mayo Clinic",
+      "image": "https://res.cloudinary.com/dph1b3jla/image/upload/v1745310709/nappy-WuYuMUnNRTI-unsplash_eptocw.jpg",
+      "availability": {
+        "tuesday": ["09:00", "10:00", "11:00", "14:00", "15:00"],
+        "thursday": ["09:00", "10:00", "11:00", "14:00", "15:00"],
+        "saturday": ["09:00", "10:00", "11:00"]
+      }
+    },
+    {
+      "id": 5,
+      "name": "Dr. Lisa Patel",
+      "specialty": "Dermatology",
+      "rating": 4.9,
+      "reviews": 203,
+      "experience": "10 years",
+      "location": "Skin Care Center, 654 Maple Ave",
+      "postgraduate": "MD, PhD in Dermatology, Yale University",
+      "image": "https://res.cloudinary.com/dph1b3jla/image/upload/v1745131599/fotos-H9lg5Noj660-unsplash_xrdmfh.jpg",
+      "availability": {
+        "monday": ["10:00", "11:00", "13:00", "14:00", "15:00"],
+        "wednesday": ["10:00", "11:00", "13:00", "14:00", "15:00"],
+        "friday": ["10:00", "11:00", "13:00", "14:00", "15:00"]
+      }
+    },
+    {
+      "id": 6,
+      "name": "Dr. Robert Kim",
+      "specialty": "Ophthalmology",
+      "rating": 4.8,
+      "reviews": 145,
+      "experience": "14 years",
+      "location": "Vision Care Center, 987 Cedar St",
+      "postgraduate": "MD, MS in Ophthalmology, University of California, San Francisco",
+      "image": "https://res.cloudinary.com/dph1b3jla/image/upload/v1745134318/smiling-doctor-with-strethoscope-isolated-grey_w0xtdl.jpg",
+      "availability": {
+        "tuesday": ["09:00", "10:00", "11:00", "14:00", "15:00"],
+        "thursday": ["09:00", "10:00", "11:00", "14:00", "15:00"],
+        "saturday": ["09:00", "10:00", "11:00"]
+      }
+    },
+    {
+      "id": 7,
+      "name": "Dr. Maria Garcia",
+      "specialty": "Endocrinology",
+      "rating": 4.7,
+      "reviews": 92,
+      "experience": "11 years",
+      "location": "Endocrine Center, 147 Birch St",
+      "postgraduate": "MD, PhD in Endocrinology, University of Pennsylvania",
+      "image": "https://res.cloudinary.com/dph1b3jla/image/upload/v1745131597/bermix-studio-ODM_VsTM2QQ-unsplash_uxzs7a.jpg",
+      "availability": {
+        "monday": ["08:00", "09:00", "10:00", "13:00", "14:00"],
+        "wednesday": ["08:00", "09:00", "10:00", "13:00", "14:00"],
+        "friday": ["08:00", "09:00", "10:00", "13:00", "14:00"]
+      }
+    },
+    {
+      "id": 8,
+      "name": "Dr. Vivian Lee",
+      "specialty": "Gastroenterology",
+      "rating": 4.6,
+      "reviews": 78,
+      "experience": "16 years",
+      "location": "Digestive Health Center, 258 Willow St",
+      "postgraduate": "MD, PhD in Gastroenterology, University of Chicago",
+      "image": "https://res.cloudinary.com/dph1b3jla/image/upload/v1745131597/ato-aikins-TPT4pevJEmQ-unsplash_rcu7lt.jpg",
+      "availability": {
+        "tuesday": ["10:00", "11:00", "13:00", "14:00", "15:00"],
+        "thursday": ["10:00", "11:00", "13:00", "14:00", "15:00"],
+        "saturday": ["09:00", "10:00", "11:00"]
+      }
+    },
+    {
+      "id": 9,
+      "name": "Dr. Jennifer Lee",
+      "specialty": "Psychiatry",
+      "rating": 4.9,
+      "reviews": 167,
+      "experience": "9 years",
+      "location": "Mental Health Center, 369 Spruce St",
+      "postgraduate": "MD, PhD in Psychiatry, Columbia University",
+      "image": "https://res.cloudinary.com/dph1b3jla/image/upload/v1745140936/front-view-smiley-covid-recovery-center-female-doctor_vbxkgv.jpg",
+      "availability": {
+        "monday": ["09:00", "10:00", "11:00", "14:00", "15:00"],
+        "wednesday": ["09:00", "10:00", "11:00", "14:00", "15:00"],
+        "friday": ["09:00", "10:00", "11:00", "14:00", "15:00"]
+      }
+    },
+    {
+      "id": 10,
+      "name": "Dr. William Brown",
+      "specialty": "Urology",
+      "rating": 4.7,
+      "reviews": 112,
+      "experience": "13 years",
+      "location": "Urology Center, 741 Ash St",
+      "postgraduate": "MD, MS in Urology, University of Michigan",
+      "image": "https://res.cloudinary.com/dph1b3jla/image/upload/v1745311067/roy-k-PukoW35U8JA-unsplash_dpgb2i.jpg",
+      "availability": {
+        "tuesday": ["08:00", "09:00", "10:00", "13:00", "14:00"],
+        "thursday": ["08:00", "09:00", "10:00", "13:00", "14:00"],
+        "saturday": ["09:00", "10:00", "11:00"]
+      }
+    },
+    {
+      "id": 11,
+      "name": "Dr. Sophia Martinez",
+      "specialty": "Ob-Gyn",
+      "rating": 4.8,
+      "reviews": 189,
+      "experience": "12 years",
+      "location": "Women's Health Center, 852 Oak St",
+      "postgraduate": "MD, MPH in Women's Health, University of Washington",
+      "image": "https://res.cloudinary.com/dph1b3jla/image/upload/v1745140313/woman-doctor-wearing-lab-coat-with-stethoscope-isolated_sj3nn1.jpg",
+      "availability": {
+        "monday": ["10:00", "11:00", "13:00", "14:00", "15:00"],
+        "wednesday": ["10:00", "11:00", "13:00", "14:00", "15:00"],
+        "friday": ["10:00", "11:00", "13:00", "14:00", "15:00"]
+      }
+    },
+    {
+      "id": 12,
+      "name": "Dr. Christopher Taylor",
+      "specialty": "Pulmonology",
+      "rating": 4.6,
+      "reviews": 95,
+      "experience": "15 years",
+      "location": "Lung Health Center, 963 Pine St",
+      "postgraduate": "MD, PhD in Pulmonary Medicine, Duke University",
+      "image": "https://res.cloudinary.com/dph1b3jla/image/upload/v1745131598/austin-distel-7bMdiIqz_J4-unsplash_wdq3tt.jpg",
+      "availability": {
+        "tuesday": ["09:00", "10:00", "11:00", "14:00", "15:00"],
+        "thursday": ["09:00", "10:00", "11:00", "14:00", "15:00"],
+        "saturday": ["09:00", "10:00", "11:00"]
+      }
+    },
+    {
+      "id": 13,
+      "name": "Dr. Olivia Anderson",
+      "specialty": "Rheumatology",
+      "rating": 4.7,
+      "reviews": 78,
+      "experience": "10 years",
+      "image": "https://res.cloudinary.com/dph1b3jla/image/upload/v1745131599/humberto-chavez-FVh_yqLR9eA-unsplash_pyqpvm.jpg",
+      "availability": {
+        "monday": ["08:00", "09:00", "10:00", "13:00", "14:00"],
+        "wednesday": ["08:00", "09:00", "10:00", "13:00", "14:00"],
+        "friday": ["08:00", "09:00", "10:00", "13:00", "14:00"]
+      }
+    },
+    {
+      "id": 14,
+      "name": "Dr. Ethan White",
+      "specialty": "Hematology",
+      "rating": 4.9,
+      "reviews": 134,
+      "experience": "14 years",
+      "image": "https://res.cloudinary.com/dph1b3jla/image/upload/v1745131602/bruno-rodrigues-279xIHymPYY-unsplash_liiwqw.jpg",
+      "availability": {
+        "tuesday": ["10:00", "11:00", "13:00", "14:00", "15:00"],
+        "thursday": ["10:00", "11:00", "13:00", "14:00", "15:00"],
+        "saturday": ["09:00", "10:00", "11:00"]
+      }
+    },
+    {
+      "id": 15,
+      "name": "Dr. Ava Thompson",
+      "specialty": "Allergy & Immunology",
+      "rating": 4.8,
+      "reviews": 112,
+      "experience": "11 years",
+      "image": "https://res.cloudinary.com/dph1b3jla/image/upload/v1745131599/siamak-poorjam-xHFqoXAj3E4-unsplash_d9lxfg.jpg",
+      "availability": {
+        "monday": ["09:00", "10:00", "11:00", "14:00", "15:00"],
+        "wednesday": ["09:00", "10:00", "11:00", "14:00", "15:00"],
+        "friday": ["09:00", "10:00", "11:00", "14:00", "15:00"]
+      }
+    },
+    {
+      "id": 16,
+      "name": "Dr. Noah Davis",
+      "specialty": "Infectious Disease",
+      "rating": 4.7,
+      "reviews": 89,
+      "experience": "13 years",
+      "image": "https://res.cloudinary.com/dph1b3jla/image/upload/v1745131602/usman-yousaf-pTrhfmj2jDA-unsplash_zgcgaz.jpg",
+      "availability": {
+        "tuesday": ["08:00", "09:00", "10:00", "13:00", "14:00"],
+        "thursday": ["08:00", "09:00", "10:00", "13:00", "14:00"],
+        "saturday": ["09:00", "10:00", "11:00"]
+      }
+    },
+    {
+      "id": 17,
+      "name": "Dr. Isabella Clark",
+      "specialty": "Nephrology",
+      "rating": 4.6,
+      "reviews": 76,
+      "experience": "12 years",
+      "image": "https://res.cloudinary.com/dph1b3jla/image/upload/v1745131600/nolan-manning-5vgIpVeYMb8-unsplash_eopa5h.jpg",
+      "availability": {
+        "monday": ["10:00", "11:00", "13:00", "14:00", "15:00"],
+        "wednesday": ["10:00", "11:00", "13:00", "14:00", "15:00"],
+        "friday": ["10:00", "11:00", "13:00", "14:00", "15:00"]
+      }
+    },
+    {
+      "id": 18,
+      "name": "Dr. Lucas Rodriguez",
+      "specialty": "Cardiology",
+      "rating": 4.9,
+      "reviews": 156,
+      "experience": "17 years",
+      "image": "https://res.cloudinary.com/dph1b3jla/image/upload/v1745131604/tmvmnt-media-rm7rZYdl3rY-unsplash_nbz3dp.jpg",
+      "availability": {
+        "tuesday": ["09:00", "10:00", "11:00", "14:00", "15:00"],
+        "thursday": ["09:00", "10:00", "11:00", "14:00", "15:00"],
+        "saturday": ["09:00", "10:00", "11:00"]
+      }
+    },
+    {
+      "id": 19,
+      "name": "Dr. Benjamin Lee",
+      "specialty": "Neurology",
+      "rating": 4.8,
+      "reviews": 143,
+      "experience": "10 years",
+      "image": "https://res.cloudinary.com/dph1b3jla/image/upload/v1745131604/vicky-hladynets-kC0YCW1sL8Y-unsplash_ay2z39.jpg",
+      "availability": {
+        "monday": ["08:00", "09:00", "10:00", "13:00", "14:00"],
+        "wednesday": ["08:00", "09:00", "10:00", "13:00", "14:00"],
+        "friday": ["08:00", "09:00", "10:00", "13:00", "14:00"]
+      }
+    },
+    {
+      "id": 20,
+      "name": "Dr. Mia Wilson",
+      "specialty": "Pediatrics",
+      "rating": 4.7,
+      "reviews": 167,
+      "experience": "11 years",
+      "image": "https://res.cloudinary.com/dph1b3jla/image/upload/v1745131605/soybreno-SAijWzjvP9A-unsplash_pqm3i2.jpg",
+      "availability": {
+        "tuesday": ["10:00", "11:00", "13:00", "14:00", "15:00"],
+        "thursday": ["10:00", "11:00", "13:00", "14:00", "15:00"],
+        "saturday": ["09:00", "10:00", "11:00"]
+      }
+    },
+    {
+      "id": 21,
+      "name": "Dr. Joseph Anderson",
+      "specialty": "Dentistry",
+      "rating": 4.6,
+      "reviews": 98,
+      "experience": "14 years",
+      "image": "https://res.cloudinary.com/dph1b3jla/image/upload/v1745131607/laurent-yasiel-607-cXjrge4-unsplash_ge2zmk.jpg",
+      "availability": {
+        "monday": ["09:00", "10:00", "11:00", "14:00", "15:00"],
+        "wednesday": ["09:00", "10:00", "11:00", "14:00", "15:00"],
+        "friday": ["09:00", "10:00", "11:00", "14:00", "15:00"]
+      }
+    },
+    {
+      "id": 22,
+      "name": "Dr. Harriet Garcia",
+      "specialty": "Dermatology",
+      "rating": 4.9,
+      "reviews": 178,
+      "experience": "12 years",
+      "image": "https://res.cloudinary.com/dph1b3jla/image/upload/v1745131607/eben-kassaye-Z7TAIOQgjWA-unsplash_cueqh5.jpg",
+      "availability": {
+        "tuesday": ["08:00", "09:00", "10:00", "13:00", "14:00"],
+        "thursday": ["08:00", "09:00", "10:00", "13:00", "14:00"],
+        "saturday": ["09:00", "10:00", "11:00"]
+      }
+    },
+    {
+      "id": 23,
+      "name": "Dr. Amelia Martinez",
+      "specialty": "Ophthalmology",
+      "rating": 4.8,
+      "reviews": 145,
+      "experience": "13 years",
+      "image": "https://res.cloudinary.com/dph1b3jla/image/upload/v1745131609/eros-reyes-cabrera-X5tU3HuUrsc-unsplash_ctwily.jpg",
+      "availability": {
+        "monday": ["10:00", "11:00", "13:00", "14:00", "15:00"],
+        "wednesday": ["10:00", "11:00", "13:00", "14:00", "15:00"],
+        "friday": ["10:00", "11:00", "13:00", "14:00", "15:00"]
+      }
+    },
+    {
+      "id": 24,
+      "name": "Dr. Abigail Rodriguez",
+      "specialty": "Endocrinology",
+      "rating": 4.7,
+      "reviews": 112,
+      "experience": "15 years",
+      "image": "https://res.cloudinary.com/dph1b3jla/image/upload/v1745131609/eros-reyes-cabrera-RtakOBTTdvY-unsplash_sn7mrv.jpg",
+      "availability": {
+        "tuesday": ["09:00", "10:00", "11:00", "14:00", "15:00"],
+        "thursday": ["09:00", "10:00", "11:00", "14:00", "15:00"],
+        "saturday": ["09:00", "10:00", "11:00"]
+      }
+    },
+    {
+      "id": 25,
+      "name": "Dr. Harper White",
+      "specialty": "Dentistry",
+      "rating": 4.6,
+      "reviews": 89,
+      "experience": "11 years",
+      "image": "https://res.cloudinary.com/dph1b3jla/image/upload/v1745131609/ozkan-guner-Kr-Dod6WQOY-unsplash_gu3rsp.jpg",
+      "availability": {
+        "monday": ["08:00", "09:00", "10:00", "13:00", "14:00"],
+        "wednesday": ["08:00", "09:00", "10:00", "13:00", "14:00"],
+        "friday": ["08:00", "09:00", "10:00", "13:00", "14:00"]
+      }
+    },
+    {
+      "id": 26,
+      "name": "Dr. Daniel Clark",
+      "specialty": "Psychiatry",
+      "rating": 4.9,
+      "reviews": 167,
+      "experience": "14 years",
+      "image": "https://res.cloudinary.com/dph1b3jla/image/upload/v1745131610/levi-meir-clancy-sX24JW-9tkU-unsplash_w4ebse.jpg",
+      "availability": {
+        "tuesday": ["10:00", "11:00", "13:00", "14:00", "15:00"],
+        "thursday": ["10:00", "11:00", "13:00", "14:00", "15:00"],
+        "saturday": ["09:00", "10:00", "11:00"]
+      }
+    },
+    {
+      "id": 27,
+      "name": "Dr. Evelyn Davis",
+      "specialty": "Urology",
+      "rating": 4.8,
+      "reviews": 134,
+      "experience": "12 years",
+      "image": "https://res.cloudinary.com/dph1b3jla/image/upload/v1745131611/alexandra-lowenthal-GyGIek1K1vQ-unsplash_ttabuh.jpg",
+      "availability": {
+        "monday": ["09:00", "10:00", "11:00", "14:00", "15:00"],
+        "wednesday": ["09:00", "10:00", "11:00", "14:00", "15:00"],
+        "friday": ["09:00", "10:00", "11:00", "14:00", "15:00"]
+      }
+    },
+    {
+      "id": 28,
+      "name": "Dr. Victoria Patel",
+      "specialty": "Ob-Gyn",
+      "rating": 4.7,
+      "reviews": 156,
+      "experience": "13 years",
+      "image": "https://res.cloudinary.com/dph1b3jla/image/upload/v1745131612/markus-kammermann-Rb7CSibEFOo-unsplash_kcnxkp.jpg",
+      "availability": {
+        "tuesday": ["08:00", "09:00", "10:00", "13:00", "14:00"],
+        "thursday": ["08:00", "09:00", "10:00", "13:00", "14:00"],
+        "saturday": ["09:00", "10:00", "11:00"]
+      }
+    },
+    {
+      "id": 29,
+      "name": "Dr. Alexander Thompson",
+      "specialty": "Pulmonology",
+      "rating": 4.6,
+      "reviews": 98,
+      "experience": "11 years",
+      "image": "https://res.cloudinary.com/dph1b3jla/image/upload/v1745131612/mohamad-azaam-1O8CJy1A7Wo-unsplash_w890f6.jpg",
+      "availability": {
+        "monday": ["10:00", "11:00", "13:00", "14:00", "15:00"],
+        "wednesday": ["10:00", "11:00", "13:00", "14:00", "15:00"],
+        "friday": ["10:00", "11:00", "13:00", "14:00", "15:00"]
+      }
+    },
+    {
+      "id": 30,
+      "name": "Dr. Charlotte Brown",
+      "specialty": "Rheumatology",
+      "rating": 4.9,
+      "reviews": 112,
+      "experience": "15 years",
+      "image": "https://res.cloudinary.com/dph1b3jla/image/upload/v1745134320/beautiful-young-female-doctor-looking-camera-office_b0nmgd.jpg",
+      "availability": {
+        "tuesday": ["09:00", "10:00", "11:00", "14:00", "15:00"],
+        "thursday": ["09:00", "10:00", "11:00", "14:00", "15:00"],
+        "saturday": ["09:00", "10:00", "11:00"]
+      }
+    },
+    {
+      "id": 31,
+      "name": "Dr. Elizabeth Taylor",
+      "specialty": "Hematology",
+      "rating": 4.8,
+      "reviews": 89,
+      "experience": "12 years",
+      "image": "https://res.cloudinary.com/dph1b3jla/image/upload/v1745131614/mohamad-azaam-OQ0ssxkKtR0-unsplash_iv8ybv.jpg",
+      "availability": {
+        "monday": ["08:00", "09:00", "10:00", "13:00", "14:00"],
+        "wednesday": ["08:00", "09:00", "10:00", "13:00", "14:00"],
+        "friday": ["08:00", "09:00", "10:00", "13:00", "14:00"]
+      }
+    },
+    {
+      "id": 32,
+      "name": "Dr. David Kim",
+      "specialty": "Allergy & Immunology",
+      "rating": 4.7,
+      "reviews": 134,
+      "experience": "14 years",
+      "image": "https://res.cloudinary.com/dph1b3jla/image/upload/v1745131614/ike-ellyana-1KK4zX7g5XE-unsplash_bctxo1.jpg",
+      "availability": {
+        "tuesday": ["10:00", "11:00", "13:00", "14:00", "15:00"],
+        "thursday": ["10:00", "11:00", "13:00", "14:00", "15:00"],
+        "saturday": ["09:00", "10:00", "11:00"]
+      }
+    },
+    {
+      "id": 33,
+      "name": "Dr. Samuel Wilson",
+      "specialty": "Infectious Disease",
+      "rating": 4.6,
+      "reviews": 76,
+      "experience": "11 years",
+      "image": "https://res.cloudinary.com/dph1b3jla/image/upload/v1745131616/mohamad-azaam-YG0AQp13338-unsplash_sekzrj.jpg",
+      "availability": {
+        "monday": ["09:00", "10:00", "11:00", "14:00", "15:00"],
+        "wednesday": ["09:00", "10:00", "11:00", "14:00", "15:00"],
+        "friday": ["09:00", "10:00", "11:00", "14:00", "15:00"]
+      }
+    }
+  ]
+} 
