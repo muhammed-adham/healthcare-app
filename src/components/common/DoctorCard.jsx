@@ -75,7 +75,7 @@ const DoctorCard = ({ doctor, onBookAppointment }) => {
           </div>
           <div className="mt-2 flex items-center text-sm text-gray-500">
             <FaClock className="flex-shrink-0 mr-1.5 h-4 w-4" aria-hidden="true" />
-            <p>Available {doctor.availability}</p>
+            <p>Available on {Object.keys(doctor.availability).map(day => day.charAt(0).toUpperCase() + day.slice(1)).join(', ')}</p>
           </div>
         </div>
         <div className="mt-6">
