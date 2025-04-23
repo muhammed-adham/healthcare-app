@@ -292,7 +292,10 @@ const Doctors = () => {
           {doctors.length > 0 && totalPages > 1 && (
             <div className="flex justify-center items-center mt-8 space-x-2">
               <button
-                onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+                onClick={() => {
+                  setCurrentPage((prev) => Math.max(prev - 1, 1));
+                  scrollToTop();
+                }}
                 disabled={currentPage === 1}
                 className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 disabled:opacity-50"
               >
@@ -302,7 +305,10 @@ const Doctors = () => {
               {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
                 <button
                   key={page}
-                  onClick={() => setCurrentPage(page)}
+                  onClick={() => {
+                    setCurrentPage(page);
+                    scrollToTop();
+                  }}
                   className={`w-10 h-10 rounded-full flex items-center justify-center ${
                     currentPage === page
                       ? "bg-primary text-white"
@@ -314,7 +320,10 @@ const Doctors = () => {
               ))}
 
               <button
-                onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
+                onClick={() => {
+                  setCurrentPage((prev) => Math.min(prev + 1, totalPages));
+                  scrollToTop();
+                }}
                 disabled={currentPage === totalPages}
                 className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 disabled:opacity-50"
               >
