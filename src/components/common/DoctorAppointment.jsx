@@ -102,7 +102,7 @@ const DoctorAppointment = ({ buttonLabel = "Book Appointment" }) => {
               </div>
               <div className="grid grid-cols-7 gap-1">
                 {['S', 'M', 'T', 'W', 'T', 'F', 'S'].map((day, index) => (
-                  <div key={day} className="text-center text-sm font-medium text-primary">
+                  <div key={`day-${index}`} className="text-center text-sm font-medium text-primary">
                     {day}
                   </div>
                 ))}
