@@ -58,8 +58,8 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              {quickLinks.map((link) => (
-                <li key={link.name}>
+              {quickLinks.map((link, index) => (
+                <li key={`quick-link-${index}-${link.name}`}>
                   <Link
                     to={link.href}
                     className="text-gray-400 hover:text-white text-sm"
@@ -105,9 +105,9 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
             <div className="flex space-x-4">
-              {socialLinks.map((link) => (
+              {socialLinks.map((link, index) => (
                 <a
-                  key={link.name}
+                  key={`social-link-${index}-${link.label}`}
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"

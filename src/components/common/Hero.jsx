@@ -257,7 +257,7 @@ const Hero = () => {
                 >
                   {allSpecialties.map((specialty) => (
                     <button
-                      key={specialty.id}
+                      key={`main-specialty-${specialty.id}`}
                       onClick={() => specialty.isMore ? handleSeeMoreClick() : handleMainSpecialtySelect(specialty)}
                       onKeyDown={(e) => handleKeyDown(e, () => specialty.isMore ? handleSeeMoreClick() : handleMainSpecialtySelect(specialty))}
                       className={`flex flex-col items-center p-4 rounded-lg transition-all duration-200 ${
@@ -320,7 +320,7 @@ const Hero = () => {
                     >
                       {additionalSpecialties.map((specialty) => (
                         <button
-                          key={specialty.id}
+                          key={`additional-specialty-${specialty.id}`}
                           onClick={() => handleMainSpecialtySelect(specialty)}
                           onKeyDown={(e) => handleKeyDown(e, () => handleMainSpecialtySelect(specialty))}
                           className={`flex items-center p-4 rounded-lg transition-all duration-200 text-black ${
@@ -415,7 +415,7 @@ const Hero = () => {
                         <div className="space-y-2">
                           {availabilityOptions.map((option) => (
                             <button
-                              key={option.id}
+                              key={`availability-${option.id}`}
                               onClick={() => handleAvailabilitySelect(option)}
                               onKeyDown={(e) => handleKeyDown(e, () => handleAvailabilitySelect(option))}
                               className={`w-full text-left px-4 py-3 rounded-md flex items-center ${
@@ -477,7 +477,7 @@ const Hero = () => {
                             <ul className="space-y-2" role="list" aria-label="Practice results">
                               {filteredPractices.map((practice) => (
                                 <li
-                                  key={practice.id}
+                                  key={`practice-${practice.id}`}
                                   className="flex items-center p-3 hover:bg-gray-50 rounded-lg cursor-pointer"
                                   role="listitem"
                                   tabIndex="0"
@@ -506,7 +506,7 @@ const Hero = () => {
                             <ul className="space-y-2" role="list" aria-label="Practitioner results">
                               {filteredPractitioners.map((practitioner) => (
                                 <li
-                                  key={practitioner.id}
+                                  key={`practitioner-${practitioner.id}`}
                                   className="flex items-center p-3 hover:bg-gray-50 rounded-lg cursor-pointer"
                                   role="listitem"
                                   tabIndex="0"
@@ -547,7 +547,7 @@ const Hero = () => {
                             >
                               {filteredSpecialties.map((specialty) => (
                                 <button
-                                  key={specialty.id}
+                                  key={`filtered-specialty-${specialty.id}`}
                                   onClick={() => handleSpecialtySelect(specialty)}
                                   onKeyDown={(e) => handleKeyDown(e, () => handleSpecialtySelect(specialty))}
                                   className="flex flex-col items-center p-3 rounded-lg transition-all duration-200 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"

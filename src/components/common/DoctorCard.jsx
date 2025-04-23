@@ -27,9 +27,9 @@ const DoctorCard = ({ doctor, onBookAppointment }) => {
     for (let i = 1; i <= 5; i++) {
       stars.push(
         i <= rating ? (
-          <FaStar key={i} className="text-yellow-400" />
+          <FaStar key={`star-${i}-filled`} className="text-yellow-400" />
         ) : (
-          <FaRegStar key={i} className="text-gray-300" />
+          <FaRegStar key={`star-${i}-empty`} className="text-gray-300" />
         )
       );
     }

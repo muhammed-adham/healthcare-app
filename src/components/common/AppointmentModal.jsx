@@ -105,16 +105,25 @@ const AppointmentModal = ({ doctor, isOpen, onClose, onConfirm }) => {
               >
                 Date
               </label>
-              <input
-                type="date"
-                id="date"
-                name="date"
-                value={selectedDay}
-                onChange={(e) => setSelectedDay(e.target.value)}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"
-                min={new Date().toISOString().split('T')[0]}
-                data-first-focus
-              />
+              <div className="mt-1">
+                {days.map((day) => (
+                  <button
+                    key={`day-${day.id}`}
+                    onClick={() => setSelectedDay(day.id)}
+                    onKeyDown={(e) => handleKeyDown(e, () => setSelectedDay(day.id))}
+                    className={`px-4 py-2 rounded-md ${
+                      selectedDay === day.id
+                        ? 'bg-primary text-white'
+                        : 'hover:bg-gray-100 text-gray-700'
+                    }`}
+                    role="option"
+                    tabIndex="0"
+                    aria-selected={selectedDay === day.id}
+                  >
+                    {day.label}
+                  </button>
+                ))}
+              </div>
             </div>
 
             <div className="mt-4">

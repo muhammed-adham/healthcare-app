@@ -111,7 +111,7 @@ const DoctorAppointment = ({ buttonLabel = "Book Appointment" }) => {
                   const isSelected = day >= 15 && day <= 19;
                   return (
                     <div
-                      key={day}
+                      key={`${currentMonth.getFullYear()}-${currentMonth.getMonth()}-${day}`}
                       className={`text-center text-sm p-1 ${
                         isSelected ? 'bg-secondary text-primary' : 'text-gray-600'
                       }`}
