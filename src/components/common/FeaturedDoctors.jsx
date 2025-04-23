@@ -1,11 +1,12 @@
 import React, { useState, useMemo } from 'react';
-import { Link } from 'react-router';
+import { Link, useNavigate } from 'react-router';
 import doctorsData from '../../data/doctors.json';
 import useScrollTop from '../../hooks/useScrollTop';
 import AppointmentModal from './AppointmentModal';
 
 const FeaturedDoctors = () => {
   const scrollToTop = useScrollTop();
+  const navigate = useNavigate();
   const [selectedDoctor, setSelectedDoctor] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -31,6 +32,8 @@ const FeaturedDoctors = () => {
     // Handle appointment confirmation
     console.log(`Appointment booked with ${doctor.name} at ${time}`);
     handleCloseModal();
+    // Navigate to appointments page
+    navigate('/appointments');
   };
 
   return (

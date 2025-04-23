@@ -150,10 +150,15 @@ const AppointmentModal = ({ doctor, isOpen, onClose, onConfirm }) => {
       <div className="mt-5 sm:mt-6 sm:grid sm:grid-flow-row-dense sm:grid-cols-2 sm:gap-3">
         <button
           type="button"
-          className="inline-flex w-full justify-center rounded-md cursor-pointer bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-secondary hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:col-start-2"
+          className={`inline-flex w-full justify-center rounded-md cursor-pointer px-3 py-2 text-sm font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:col-start-2 ${
+            !selectedDay || !selectedTime
+              ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
+              : 'bg-primary text-white hover:bg-secondary hover:text-black'
+          }`}
           onClick={handleConfirm}
           onKeyDown={(e) => handleKeyDown(e, handleConfirm)}
           disabled={!selectedDay || !selectedTime}
+          aria-disabled={!selectedDay || !selectedTime}
         >
           Confirm Appointment
         </button>
