@@ -78,12 +78,17 @@ const FeaturedDoctors = () => {
       </div>
 
       {selectedDoctor && (
-        <AppointmentModal
-          doctor={selectedDoctor}
-          isOpen={isModalOpen}
-          onClose={handleCloseModal}
-          onConfirm={handleConfirmAppointment}
-        />
+        <div className="fixed inset-0 z-50 flex items-center justify-center">
+          <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true" onClick={handleCloseModal} />
+          <div className="relative mx-auto w-full max-w-lg">
+            <AppointmentModal
+              doctor={selectedDoctor}
+              isOpen={isModalOpen}
+              onClose={handleCloseModal}
+              onConfirm={handleConfirmAppointment}
+            />
+          </div>
+        </div>
       )}
     </section>
   );
