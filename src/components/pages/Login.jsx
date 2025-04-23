@@ -162,7 +162,7 @@ const Login = () => {
 
             <button
               type="submit"
-              className="w-full bg-primary text-white py-2 px-4 rounded-md hover:bg-primary-600 transition-colors"
+              className="w-full bg-primary text-white py-2 px-4 rounded-md hover:bg-secondary hover:text-black transition-colors"
             >
               {isLogin ? 'Sign In' : 'Create Account'}
             </button>

@@ -133,17 +133,6 @@ const Doctors = () => {
     setAppointments([...appointments, newAppointment]);
   };
 
-  // Calculate pagination
-  const indexOfLastDoctor = currentPage * doctorsPerPage;
-  const indexOfFirstDoctor = indexOfLastDoctor - doctorsPerPage;
-  const currentDoctors = doctors.slice(indexOfFirstDoctor, indexOfLastDoctor);
-  const totalPages = Math.ceil(doctors.length / doctorsPerPage);
-
-  const handlePageChange = (pageNumber) => {
-    setCurrentPage(pageNumber);
-    scrollToTop();
-  };
-
   const scrollLeft = () => {
     if (specialtiesContainerRef.current) {
       specialtiesContainerRef.current.scrollBy({
@@ -161,6 +150,13 @@ const Doctors = () => {
       });
     }
   };
+
+  // Calculate pagination
+  const indexOfLastDoctor = currentPage * doctorsPerPage;
+  const indexOfFirstDoctor = indexOfLastDoctor - doctorsPerPage;
+  const currentDoctors = doctors.slice(indexOfFirstDoctor, indexOfLastDoctor);
+
+  const totalPages = Math.ceil(doctors.length / doctorsPerPage);
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -296,7 +292,7 @@ const Doctors = () => {
           {doctors.length > 0 && totalPages > 1 && (
             <div className="flex justify-center items-center mt-8 space-x-2">
               <button
-                onClick={() => handlePageChange(currentPage - 1)}
+                onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
                 disabled={currentPage === 1}
                 className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 disabled:opacity-50"
               >
@@ -306,7 +302,7 @@ const Doctors = () => {
               {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
                 <button
                   key={page}
-                  onClick={() => handlePageChange(page)}
+                  onClick={() => setCurrentPage(page)}
                   className={`w-10 h-10 rounded-full flex items-center justify-center ${
                     currentPage === page
                       ? "bg-primary text-white"
@@ -318,7 +314,7 @@ const Doctors = () => {
               ))}
 
               <button
-                onClick={() => handlePageChange(currentPage + 1)}
+                onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
                 disabled={currentPage === totalPages}
                 className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 disabled:opacity-50"
               >

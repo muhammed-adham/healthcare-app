@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { FaCheck, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { useNavigate } from 'react-router';
 
 const DoctorAppointment = ({ buttonLabel = "Book Appointment" }) => {
+  const navigate = useNavigate();
   const [currentMonth, setCurrentMonth] = useState(new Date());
 
   const monthNames = [
@@ -15,6 +17,10 @@ const DoctorAppointment = ({ buttonLabel = "Book Appointment" }) => {
 
   const handleNextMonth = () => {
     setCurrentMonth(new Date(currentMonth.getFullYear(), currentMonth.getMonth() + 1));
+  };
+
+  const handleButtonClick = () => {
+    navigate('/doctors');
   };
 
   return (
@@ -70,7 +76,10 @@ const DoctorAppointment = ({ buttonLabel = "Book Appointment" }) => {
               </div>
             </div>
 
-            <button className="bg-primary text-white px-8 py-3 rounded-lg font-medium hover:bg-secondary hover:text-black transition-colors duration-200">
+            <button 
+              onClick={handleButtonClick}
+              className="bg-primary text-white px-8 py-3 rounded-lg font-medium hover:bg-secondary hover:text-black transition-colors duration-200"
+            >
               {buttonLabel}
             </button>
           </div>

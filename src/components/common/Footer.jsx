@@ -42,7 +42,7 @@ const Footer = () => {
 
   return (
     <footer 
-      className="bg-gray-900 text-white"
+      className="bg-primary text-white"
       role="contentinfo"
       aria-label="Site footer"
     >
@@ -50,7 +50,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <h3 className="text-lg font-semibold mb-4">About Us</h3>
-            <p className="text-gray-400 text-sm">
+            <p className="text-white/70 text-sm">
               Connecting patients with healthcare providers for better health outcomes.
             </p>
           </div>
@@ -61,8 +61,9 @@ const Footer = () => {
               {quickLinks.map((link, index) => (
                 <li key={`quick-link-${index}-${link.name}`}>
                   <Link
-                    to={link.href}
-                    className="text-gray-400 hover:text-white text-sm"
+                    to={link.url}
+                    className="text-white/70 hover:text-white text-sm"
+                    onClick={() => scrollToTop(link.url)}
                     onKeyDown={(e) => handleKeyDown(e, () => scrollToTop(link.url))}
                   >
                     {link.label}
@@ -75,7 +76,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <ul className="space-y-2">
-              <li className="flex items-center text-gray-400 text-sm">
+              <li className="flex items-center text-white/70 text-sm">
                 <FaPhone className="mr-2" aria-hidden="true" />
                 <a 
                   href="tel:+1234567890"
@@ -85,7 +86,7 @@ const Footer = () => {
                   +1 (234) 567-890
                 </a>
               </li>
-              <li className="flex items-center text-gray-400 text-sm">
+              <li className="flex items-center text-white/70 text-sm">
                 <FaEnvelope className="mr-2" aria-hidden="true" />
                 <a 
                   href="mailto:info@healthcare.com"
@@ -95,7 +96,7 @@ const Footer = () => {
                   info@healthcare.com
                 </a>
               </li>
-              <li className="flex items-center text-gray-400 text-sm">
+              <li className="flex items-center text-white/70 text-sm">
                 <FaMapMarkerAlt className="mr-2" aria-hidden="true" />
                 <span>123 Healthcare St, Medical City</span>
               </li>
@@ -111,7 +112,7 @@ const Footer = () => {
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-white"
+                  className="text-white/70 hover:text-white"
                   onKeyDown={(e) => handleKeyDown(e, () => window.open(link.url, '_blank'))}
                   aria-label={`Follow us on ${link.label}`}
                 >
@@ -125,20 +126,20 @@ const Footer = () => {
 
         <div className="mt-8 pt-8 border-t border-gray-800">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm">
+            <p className="text-white text-sm">
               © {new Date().getFullYear()} Healthcare. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link
                 to="/privacy"
-                className="text-gray-400 hover:text-white text-sm"
+                className="text-white/70 hover:text-white text-sm"
                 onKeyDown={(e) => handleKeyDown(e, () => scrollToTop('/privacy'))}
               >
                 Privacy Policy
               </Link>
               <Link
                 to="/terms"
-                className="text-gray-400 hover:text-white text-sm"
+                className="text-white/70 hover:text-white text-sm"
                 onKeyDown={(e) => handleKeyDown(e, () => scrollToTop('/terms'))}
               >
                 Terms of Service

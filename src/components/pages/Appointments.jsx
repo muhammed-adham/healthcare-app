@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router';
-import { FaCalendarAlt, FaClock, FaUserMd, FaMapMarkerAlt, FaCheck, FaTimes } from 'react-icons/fa';
+import { useNavigate } from 'react-router';
+import { FaCalendarAlt, FaClock, FaUserMd, FaMapMarkerAlt, FaCheck, FaTimes, FaChevronRight } from 'react-icons/fa';
 import Banner from '../common/Banner';
 
 const Appointments = () => {
+  const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState('upcoming');
 
   // Sample appointment data
@@ -39,6 +40,11 @@ const Appointments = () => {
         status: 'completed',
       },
     ],
+  };
+
+  const handleAppointmentClick = (appointment) => {
+    // Navigate to doctors page with the doctor's name as a search parameter
+    navigate(`/doctors?search=${encodeURIComponent(appointment.doctor)}`);
   };
 
   return (
@@ -89,7 +95,8 @@ const Appointments = () => {
           {appointments[activeTab].map((appointment) => (
             <div
               key={appointment.id}
-              className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-200"
+              className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-200 cursor-pointer"
+              onClick={() => handleAppointmentClick(appointment)}
             >
               <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                 <div className="space-y-4">
@@ -159,12 +166,12 @@ const Appointments = () => {
                 No {activeTab} appointments found.
               </p>
               {activeTab === 'upcoming' && (
-                <Link
-                  to="/doctors"
+                <button
+                  type="button"
                   className="mt-4 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-primary hover:bg-primary-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
                 >
                   Schedule New Appointment
-                </Link>
+                </button>
               )}
             </div>
           )}

@@ -39,59 +39,46 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {/* Contact Info and Form Section */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           {/* Contact Information */}
-          <div className="space-y-8">
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h2 className="text-2xl font-semibold mb-6">Get in Touch</h2>
-              
-              <div className="space-y-4">
-                <div className="flex items-start">
-                  <FaPhone className="text-primary mt-1 mr-4" />
-                  <div>
-                    <h3 className="font-semibold">Phone</h3>
-                    <p className="text-gray-600">(123) 456-7890</p>
-                    <p className="text-gray-600">(123) 456-7891</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
-                  <FaEnvelope className="text-primary mt-1 mr-4" />
-                  <div>
-                    <h3 className="font-semibold">Email</h3>
-                    <p className="text-gray-600">info@healthcare.com</p>
-                    <p className="text-gray-600">support@healthcare.com</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
-                  <FaMapMarkerAlt className="text-primary mt-1 mr-4" />
-                  <div>
-                    <h3 className="font-semibold">Address</h3>
-                    <p className="text-gray-600">123 Healthcare Street</p>
-                    <p className="text-gray-600">Medical City, MC 12345</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
-                  <FaClock className="text-primary mt-1 mr-4" />
-                  <div>
-                    <h3 className="font-semibold">Working Hours</h3>
-                    <p className="text-gray-600">Monday - Friday: 9:00 AM - 5:00 PM</p>
-                    <p className="text-gray-600">Saturday: 9:00 AM - 1:00 PM</p>
-                    <p className="text-gray-600">Sunday: Closed</p>
-                  </div>
+          <div className="bg-white rounded-lg shadow-md p-6">
+            <h2 className="text-2xl font-semibold mb-6">Get in Touch</h2>
+            <div className="space-y-4">
+              <div className="flex items-start">
+                <FaPhone className="text-primary mt-1 mr-4" />
+                <div>
+                  <h3 className="font-semibold">Phone</h3>
+                  <p className="text-gray-600">(123) 456-7890</p>
+                  <p className="text-gray-600">(123) 456-7891</p>
                 </div>
               </div>
-            </div>
 
-            {/* Map Placeholder */}
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h2 className="text-2xl font-semibold mb-4">Our Location</h2>
-              <div className="aspect-w-16 aspect-h-9 bg-gray-200 rounded-lg">
-                {/* Replace with actual map component */}
-                <div className="flex items-center justify-center h-full">
-                  <p className="text-gray-500">Map will be displayed here</p>
+              <div className="flex items-start">
+                <FaEnvelope className="text-primary mt-1 mr-4" />
+                <div>
+                  <h3 className="font-semibold">Email</h3>
+                  <p className="text-gray-600">info@healthcare.com</p>
+                  <p className="text-gray-600">support@healthcare.com</p>
+                </div>
+              </div>
+
+              <div className="flex items-start">
+                <FaMapMarkerAlt className="text-primary mt-1 mr-4" />
+                <div>
+                  <h3 className="font-semibold">Address</h3>
+                  <p className="text-gray-600">123 Healthcare Street</p>
+                  <p className="text-gray-600">Medical City, MC 12345</p>
+                </div>
+              </div>
+
+              <div className="flex items-start">
+                <FaClock className="text-primary mt-1 mr-4" />
+                <div>
+                  <h3 className="font-semibold">Working Hours</h3>
+                  <p className="text-gray-600">Monday - Friday: 9:00 AM - 5:00 PM</p>
+                  <p className="text-gray-600">Saturday: 9:00 AM - 1:00 PM</p>
+                  <p className="text-gray-600">Sunday: Closed</p>
                 </div>
               </div>
             </div>
@@ -168,6 +155,24 @@ const Contact = () => {
                 Send Message
               </button>
             </form>
+          </div>
+        </div>
+
+        {/* Map Section - Full Width */}
+        <div className="bg-white rounded-lg shadow-md p-6">
+          <h2 className="text-2xl font-semibold mb-4">Our Location</h2>
+          <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14534444.000000002!2d24.700000000000003!3d26.820553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14368976c35c36e9%3A0x2c45a00925c4c444!2sEgypt!5e0!3m2!1sen!2seg!4v1710000000000!5m2!1sen!2seg"
+              width="100%"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Map of Egypt"
+              aria-label="Interactive map of Egypt"
+            ></iframe>
           </div>
         </div>
       </div>

@@ -224,12 +224,12 @@ const Hero = () => {
 
   return (
     <div 
-      className="relative bg-gradient-to-r from-primary to-primary-dark min-h-[600px]"
+      className="relative bg-gradient-to-r from-primary "
       role="banner"
       aria-label="Healthcare provider search"
     >
       <section 
-        className="bg-gradient-to-r from-primary to-primary-600 text-white py-20 relative"
+        className="bg-gradient-to-r from-primary text-white py-20 relative"
         aria-label="Search section"
       >
         <DoctorPhotos />
